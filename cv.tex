@@ -17,15 +17,21 @@
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
 % Remove the 'osf' bit if you don't like the old style figures.
-\usepackage[T1]{fontenc}
-\usepackage[sc,osf]{mathpazo}
+\usepackage{fontspec} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Garamond}
+% Cool ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{Garamond}\selectfont\itshape\&}}
 
 % Set your name here
 \def\name{Tahir H. Butt}
 
 % Replace this with a link to your CV if you like, or set it empty
 % (as in \def\footerlink{}) to remove the link in the footer:
-% \def\footerlink{http://tahirbutt.info/}
+\def\footerlink{http://tahirbutt.com/}
 
 % The following metadata will show up in the PDF properties
 \hypersetup{
@@ -84,6 +90,7 @@
   \begin{tabular}{ll}
     Phone: & (862) 368-6709 \\
     Email: & \href{mailto:me@tahirbutt.com}{\tt me@tahirbutt.com} \\
+    Web: & \href{http://tahirbutt.com}{\tt tahirbutt.com} \\
   \end{tabular}
 \end{minipage}
 
@@ -103,11 +110,15 @@
 \section*{Teaching}
 
 \begin{itemize}
+    \item CUNY Graduate Center New York, NY, Digital Fellow, Fall 2016--Present.
+      \begin{itemize}
+        \item Support students and faculty with educational workshops and consultations for using technology for research and scholarship.
+      \end{itemize}
     \item Computing Concepts Pilot at The Macaulay Honors College New York, NY, Teaching Assistant, Winter 2016.
       \begin{itemize}
         \item Supported visiting professor Zachary Dodd of Harvey Mudd College in an intensive 3-week pilot course for non-computer science majors to be introduced to computing through the Python programming language.
       \end{itemize}
-    \item The Macaulay Honors College New York, NY, Instructional Technology Fellow, Fall 2013--Present.
+    \item The Macaulay Honors College New York, NY, Instructional Technology Fellow, Fall 2013--Spring 2016.
       \begin{itemize}
         \item Responsible for supporting faculty and students in integrating technology into curriculum and student projects, using a Wordpress platform for developing course websites along with other open-source software.
       \end{itemize}
@@ -117,9 +128,9 @@
 \section*{Professional}
 
 \begin{itemize}
-    \item Amplify Brooklyn, NY, Software Engineer, 2005--Present.
+    \item Amplify Brooklyn, NY, Software Engineer, 2005--2016.
         \begin{itemize}
-            \item Data engineer for product development 2011--Present (Part-time).
+            \item Data engineer for product development 2011--2016.
             \item Software engineer for classroom tools and school reporting systems 2005--2011.
         \end{itemize}
 \end{itemize}
@@ -127,7 +138,7 @@
 \section*{Fellowships and awards}
 \begin{itemize}
   \item Digital Fellow, Graduate Center Digital Initiatives at the Graduate Center of CUNY New York, NY. Fall 2016--Present
-  \item Instructional Technology Fellow, Macaulay Honors College CUNY New York, NY. Fall 2013--Present
+  \item Instructional Technology Fellow, Macaulay Honors College CUNY New York, NY. Fall 2013--Spring 2016
   \item Advanced Research Collaborative Student Fellow, CUNY Graduate Center New York, NY. Fall 2013--Spring 2014
   \item Enhanced Chancellor Fellow, CUNY Graduate Center New York, NY. Fall 2011--Spring 2012
   \item National Science Foundation IGERT Graduate Training Fellowship, Brown University Providence, RI. 2002--2004
