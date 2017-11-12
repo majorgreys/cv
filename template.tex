@@ -1,0 +1,166 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[$fontsize$, a4paper]{article}
+
+% LAYOUT
+%--------------------------------
+% Margins
+\usepackage{geometry} 
+\geometry{$geometry$}
+
+% Do not indent paragraphs
+\setlength\parindent{0in}
+
+% Enable multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{-3.5cm}
+
+% Uncomment to suppress page numbers
+% \pagenumbering{gobble}
+
+% LANGUAGE
+%--------------------------------
+% Set the main language
+$if(lang)$
+\usepackage{polyglossia}
+\setmainlanguage{$lang$}
+$endif$
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontspec} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
+% Cool ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+
+% MARGIN NOTES
+%--------------------------------
+\usepackage{marginnote}
+\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+%--------------------------------
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries} 
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% PDF SETUP
+%--------------------------------
+\usepackage{hyperref}
+\hypersetup
+{
+  pdfauthor={$name$},
+  pdfsubject={$name$'s CV},
+  pdftitle={$name$'s CV},
+  colorlinks, breaklinks, xetex, bookmarks,
+  filecolor=black,
+  urlcolor=[rgb]{0.0,0.48,0.65},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  citecolor=[rgb]{0.117,0.682,0.858}
+}
+
+% DOCUMENT
+%--------------------------------
+\begin{document}
+
+{\LARGE $name$}\\[.2cm]
+
+$if(urls)$
+\begin{multicols}{2}
+$endif$
+
+$for(address)$
+$address$\\
+$endfor$
+
+\vspace{-10pt}
+
+$phone$\\
+\href{mailto:$email$}{$email$}\\
+
+
+$if(urls)$
+\columnbreak
+
+$for(urls)$
+\href{http://$urls$}{$urls$}\\
+$endfor$
+\end{multicols}
+$endif$
+
+\vspace{20pt}
+
+$if(intro)$
+$intro$
+$endif$
+
+$if(skills)$
+\subsection*{Areas of Interest}
+\begin{itemize}
+    $for(skills)$
+      \item $skills$
+    $endfor$
+\end{itemize}
+% \vfill
+\vspace{25pt}
+$endif$
+
+$if(education)$
+\section*{Education}
+\noindent
+$for(education)$
+\note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
+\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\
+$if(education.dissertation)$Dissertation: "$education.dissertation$"$endif$\\
+$if(education.committee)$Committee: $education.committee$$endif$\\[.2cm]
+$endfor$
+$endif$
+
+\section*{Fellowships}
+\noindent
+$for(fellowships)$
+\note{$fellowships.years$}$fellowships.employer$\\
+\emph{$fellowships.job$}\\
+$fellowships.city$\\[.2cm]
+$endfor$
+
+\section*{Grants}
+\noindent
+$for(grants)$
+\note{$grants.year$}$grants.grant$\\
+$if(grants.project)$\emph{$grants.project$}$endif$ ($grants.sum$)\\
+$grants.organization$\\[.2cm]
+$endfor$
+
+\section*{Invited Talks}
+\noindent
+$for(talks)$
+\note{$talks.year$}"$talks.title$"\\
+Presented at $talks.at$, $talks.date$\\[.2cm]
+$endfor$
+
+\section*{Conferences}
+\noindent
+$for(conferences)$
+\note{$conferences.year$}"$conferences.title$"\\
+Presented at $conferences.at$, $conferences.date$\\[.2cm]
+$endfor$
+
+$if(languages)$
+\section*{Languages}
+$for(languages)$
+\emph{$languages.language$} ($languages.proficiency$)\\
+$endfor$
+$endif$
+
+\end{document}
