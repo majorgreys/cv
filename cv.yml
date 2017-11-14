@@ -25,7 +25,7 @@ education:
   institute: The Graduate Center, CUNY
   city: New York, NY
   dissertation: "\"Free Tuition and Exclusion at the City University of New York, 1957-1976\""
-  committee: Stephen Brier (Chair), Jeanne Theoharis, Josh Freeman, Paul Attwell
+  committee: Stephen Brier (Chair), Jeanne Theoharis, Joshua Freeman, Paul Attwell
 - year: 1998--2002
   subject: B.A., Cognitive Science and Mathematics
   institute: Johns Hopkins University
@@ -72,10 +72,10 @@ conferences:
   title: "\"When the Proletarian Harvard Was Kept Lily-White\""
   at: American Education Research Association Annual Meeting
   date: April 20, 2016
-- year: 2013
-  title: "\"Free Tuition at City College of New York\""
+- year: 2014
+  title: "\"Higher Education Tuition Before Neoliberalism\""
   at: Historical Materialism, York University, Toronto, Canada
-  date: April 20, 2016
+  date: May 11, 2014
 
 # Settings
 mainfont: LinLibertine
