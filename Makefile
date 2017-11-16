@@ -5,8 +5,8 @@ FLAGS = --pdf-engine=xelatex
 cv.pdf : $(src)
 	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
 
-cv.tex : $(src)
-	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
+cv.docx : $(src)
+	$(TEX) $(filter-out $<,$^ ) -t latex --template=$< $(FLAGS) | pandoc -f latex -o $@ 
 
 .PHONY: clean
 clean :

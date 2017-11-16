@@ -46,6 +46,11 @@ fellowships:
   city: Brooklyn, NY
 
 grants:
+- year: 2017--2018
+  grant: Research Grant
+  organization: NYC Media Lab
+  project: Data science research for The Weather Company with Agustín Indaco
+  sum: \$25,000
 - year: 2016
   grant: Provost Digital Innovation Grant
   organization: The Graduate Center, CUNY
@@ -77,9 +82,17 @@ conferences:
   at: Historical Materialism, York University, Toronto, Canada
   date: May 11, 2014
 
+references:
+- name: Stephen Brier
+  position: Professor and Program Coordinator of Interactive Technology and Pedagogy (ITP) Program
+  institution: The Graduate Center, CUNY
+- name: Matthew Gold
+  position: Professor and Co-Director of Digital Iniatives
+  institution: The Graduate Center, CUNY
+
 # Settings
-mainfont: LinLibertine
+mainfont: Linux Libertine O 
 fontsize: 10pt
 lang: en-US
-geometry: letterpaper, left=35mm, right=35mm, top=51mm, bottom=17mm
+geometry: letterpaper, left=35mm, right=35mm, top=35mm, bottom=35mm
 ---

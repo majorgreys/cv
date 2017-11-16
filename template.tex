@@ -98,7 +98,8 @@ $endfor$
 \end{multicols}
 $endif$
 
-\vspace{20pt}
+% \vspace{20pt}
+\vspace{.2cm}
 
 $if(intro)$
 $intro$
@@ -112,7 +113,8 @@ $if(skills)$
     $endfor$
 \end{itemize}
 % \vfill
-\vspace{25pt}
+% \vspace{25pt}
+\vspace{.2cm}
 $endif$
 
 $if(education)$
@@ -154,6 +156,14 @@ $endfor$
 $for(conferences)$
 \note{$conferences.year$}$conferences.title$\\
 Presented at $conferences.at$, $conferences.date$\\[.2cm]
+$endfor$
+
+\section*{References Upon Request}
+\noindent
+$for(references)$
+$references.name$\\
+\emph{$references.position$}\\
+$references.institution$\\[.2cm]
 $endfor$
 
 $if(languages)$
