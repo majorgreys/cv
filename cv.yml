@@ -97,12 +97,12 @@ references:
   position: Professor and Program Coordinator of Interactive Technology and Pedagogy (ITP) Program
   institution: The Graduate Center, CUNY
 - name: Matthew Gold
-  position: Professor and Co-Director of Digital Iniatives
+  position: Professor and Co-Director of Digital Initiatives
   institution: The Graduate Center, CUNY
 
 # Settings
 mainfont: Linux Libertine O 
-fontsize: 10pt
+fontsize: 11pt
 lang: en-US
 geometry: letterpaper, left=35mm, right=35mm, top=35mm, bottom=35mm
 ---
