@@ -41,9 +41,9 @@ $endif$
 % MARGIN NOTES
 %--------------------------------
 \usepackage{marginnote}
-\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\newcommand{\note}[1]{\marginnote{\small #1}}
 \renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{7pt}
+\setlength{\marginparsep}{3pt}
 \reversemarginpar
 
 % HEADINGS
@@ -127,6 +127,19 @@ $if(education.dissertation)$Dissertation: $education.dissertation$$endif$\\
 $if(education.committee)$Committee: $education.committee$$endif$\\[.2cm]
 $endfor$
 $endif$
+
+\section*{Professional Experience}
+\noindent
+$for(professional)$
+\note{$professional.years$}$professional.employer$\\
+\emph{$professional.job$}\\
+$professional.city$\\
+$if(professional.details)$
+$for(professional.details)$
+$professional.details$\\
+$endfor$
+$endif$
+$endfor$
 
 \section*{Fellowships}
 \noindent

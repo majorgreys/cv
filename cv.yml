@@ -31,6 +31,16 @@ education:
   institute: Johns Hopkins University
   city: Baltimore, MD 
 
+professional:
+- years: 2005--2017
+  employer: Amplify Education
+  job: Software Engineer
+  city: Brooklyn, NY
+  details:
+  - Implemented reporting platform with Python and Amazon Redshift
+  - Data integration and data analysis of early reading assessments and curriculum using Python, R, and Javascript (D3.js)
+  - Lead data integration of a city-wide data system for New York City Department of Education and served as technical lead on reporting tool for school administrators and teachers
+
 fellowships:
 - years: 2016--
   employer: Graduate Center Digital Initiatives, The Graduate Center, CUNY
