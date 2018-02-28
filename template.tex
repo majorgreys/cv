@@ -57,6 +57,8 @@ $endif$
 % PDF SETUP
 %--------------------------------
 \usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{hrefcolor}{RGB}{244, 67, 54}
 \hypersetup
 {
   pdfauthor={$name$},
@@ -64,10 +66,20 @@ $endif$
   pdftitle={$name$'s CV},
   colorlinks, breaklinks, xetex, bookmarks,
   filecolor=black,
-  urlcolor=[rgb]{0.0,0.48,0.65},
-  linkcolor=[rgb]{0.117,0.682,0.858},
-  citecolor=[rgb]{0.117,0.682,0.858}
+  urlcolor=hrefcolor,
+  linkcolor=hrefcolor,
+  citecolor=hrefcolor
 }
+% Modifications to default Pandoc template 
+%--------------------------------
+\usepackage[inline]{enumitem}
+\setlist{noitemsep}
+\setlist{widest}
+\setlist{nosep}
+\setlist[itemize]{leftmargin=*}
+\setlist[itemize,1]{label=$$\cdot$$}
+
+\usepackage{fontawesome}
 
 % DOCUMENT
 %--------------------------------
@@ -92,9 +104,13 @@ $phone$\\
 $if(urls)$
 \columnbreak
 
+\begin{itemize}[label=]
 $for(urls)$
-\href{http://$urls$}{$urls$}\\
+\item $if(urls.website)$\faicon{link} \href{http://$urls.website$}{$urls.website$}$endif$
+      $if(urls.github)$\faicon{github} \href{http://github.com/$urls.github$}{$urls.github$}$endif$
+      $if(urls.linkedin)$\faicon{linkedin} \href{http://linkedin.com/in/$urls.linkedin$}{$urls.linkedin$}$endif$
 $endfor$
+\end{itemize}
 \end{multicols}
 $endif$
 
@@ -133,12 +149,7 @@ $endif$
 $for(professional)$
 \note{$professional.years$}$professional.employer$\\
 \emph{$professional.job$}\\
-$professional.city$\\
-$if(professional.details)$
-$for(professional.details)$
-$professional.details$\\
-$endfor$
-$endif$
+$professional.city$\\[.2cm]
 $endfor$
 
 \section*{Fellowships}
