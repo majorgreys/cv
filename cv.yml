@@ -7,17 +7,23 @@ address:
 phone: "+1 862-368-6709"
 email: me@tahirbutt.com
 urls:
-- tahirbutt.com
-- github.com/majorgreys
+- website: tahirbutt.com
+- github: majorgreys
+- linkedin: tahirhbutt
 
-# Sections
+interests:
+  - History of education
+  - Digital scholarship
+  - Data science
 
-# intro: "I know my fate. One day my name will be associated with the memory of something tremendous --- a crisis without equal on earth, the most profound collision of conscience, a decision that was conjured up against everything that had been believed, demanded, hallowed so far. I am no man, I am dynamite."
-
-# skills:
-# - History of education, higher education
-# - Digital scholarship and digital pedagogy
-# - Data science
+techskills:
+- Python
+- R
+- SQL
+- WordPress
+- Javascript
+- Git
+- Docker
 
 education:
 - year: 2011--
@@ -37,12 +43,14 @@ professional:
   job: Software Engineer
   city: Brooklyn, NY
   details:
-  - Implemented reporting platform with Python and Amazon Redshift
-  - Data integration and data analysis of early reading assessments and curriculum using Python, R, and Javascript (D3.js)
-  - Lead data integration of a city-wide data system for New York City Department of Education and served as technical lead on reporting tool for school administrators and teachers
+  - Implemented a data pipeline and reporting platform for educational games division
+  - Data analysis and research on the efficacy of early reading assessment and curriculum product
+  - Led development of analysis tools for an instructional product leveraging machine learning algorithms
+  - Led data integration on city-wide data system for New York City Department of Education and was technical lead development of a reporting tool for school administrators and teachers 
+  - Implemented services for deployment of software packages to mobile devices and tools for monitoring of backend systems, primarily focused on database performance
 
 fellowships:
-- years: 2016--
+- years: 2016--2018
   employer: Graduate Center Digital Initiatives, The Graduate Center, CUNY
   job: Digital Fellow
   city: New York, NY
@@ -71,12 +79,46 @@ grants:
   organization: The Graduate Center, CUNY
   project: Inequality and Free Tuition at CUNY
   sum: \$2,000
+  
+projects:
+- year: 2018
+  title: Extreme Weather and Human Mobility
+  organization: NYC Media Lab and The Weather Company
+  description: In collaboration with Agustín Indaco (Ph.D. candidate in Economics at The Graduate Center), researched the effects of extreme weather on human populations using company's mobile product data with a focus on differences among socio-economic groups
+- year: 2017
+  title: Visualizing NEH
+  organization: Graduate Center Digital Initiatives
+  description: Analysis of open data from National Endowment of Humanities (NEH) and the National Endowment of the Arts (NEA) following proposed budget cuts
+  url: https://majorgreys.github.io/visualizing-neh/
+- year: 2017
+  title: Digital Research Tools for Historians
+  organization: Provost Digital Innovation Grant, The Graduate Center, CUNY
+  description: Surveyed digital research tools for historians and proposed implementation of new software based on modern web technologies and cloud infrastructure
+
+techtalks:
+- date: Feb 2018
+  title: "Do the \'R\' Thing: Data Analysis with R"
+  at: The Graduate Center, CUNY
+  url: github.com/GCDigitalFellows/do-the-r-thing
+- date: Nov 2017
+  title: "Academics \\faicon{heart} Git"
+  at: The Graduate Center, CUNY
+  url: github.com/GCDigitalFellows/academics-heart-git
+- date: Oct 2017
+  title: "Skill Share: Pandoc"
+  at: Digital Scholarship Lab, The Graduate Center, CUNY
+  url: github.com/GCDigitalFellows/skillshare-pandoc
+- date: Oct 2016
+  title: "Databases II: Querying in the Real World"
+  at: The Graduate Center, CUNY
+  url: github.com/GCDigitalFellows/QueryingInTheRealWorld
 
 talks:
 - year: 2017
   title: "\"\'Harvard of the Poor\' as Racial Myth: Racism and the City University of New York, 1960-1969\""
   at: Conversations in Black Freedom Studies, Schomburg Center for Research in Black Culture, New York Public Library
   date: November 2, 2017
+  url: https://github.com/majorgreys/schomburg-talk-nov2017
 - year: 2015 
   title: "\"Open Admissions and the Origins of the City College Childcare Center\""
   at: "\"Panel Stories of Struggle: Histories of Childcare Activism at CUNY\", The Center for the Humanities, The Graduate Center, CUNY"
@@ -101,7 +143,7 @@ references:
   institution: The Graduate Center, CUNY
 
 # Settings
-mainfont: Linux Libertine O 
+mainfont: ETBembo
 fontsize: 11pt
 lang: en-US
 geometry: letterpaper, left=35mm, right=35mm, top=35mm, bottom=35mm

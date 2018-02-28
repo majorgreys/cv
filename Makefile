@@ -1,12 +1,13 @@
 TEX = pandoc
-src = template.tex cv.yml
 FLAGS = --pdf-engine=xelatex
 
-cv.pdf : $(src)
+all: cv.pdf resume.pdf
+
+cv.pdf : template.tex cv.yml
 	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
 
-cv.docx : $(src)
-	$(TEX) $(filter-out $<,$^ ) -t latex --template=$< $(FLAGS) | pandoc -f latex -o $@ 
+resume.pdf : resume-template.tex cv.yml
+	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
 
 .PHONY: clean
 clean :
