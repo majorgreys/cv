@@ -143,7 +143,9 @@ references:
   institution: The Graduate Center, CUNY
 
 # Settings
-mainfont: ETBembo
+mainfont: Linux Libertine O
+altfont: Liberation Sans
+monofont: Linux Libertine Mono O
 fontsize: 11pt
 lang: en-US
 geometry: letterpaper, left=35mm, right=35mm, top=35mm, bottom=35mm
