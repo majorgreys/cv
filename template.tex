@@ -149,7 +149,14 @@ $endif$
 $for(professional)$
 \note{$professional.years$}$professional.employer$\\
 \emph{$professional.job$}\\
-$professional.city$\\[.2cm]
+$professional.city$\\
+$if(professional.details)$
+\begin{itemize}
+$for(professional.details)$
+\item $professional.details$
+$endfor$
+\end{itemize}
+$endif$
 $endfor$
 
 \section*{Fellowships}

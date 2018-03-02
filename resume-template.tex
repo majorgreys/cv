@@ -43,7 +43,7 @@ $endif$
 \usepackage{marginnote}
 \newcommand{\note}[1]{\marginnote{\small #1}}
 \renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{3pt}
+\setlength{\marginparsep}{5pt}
 \reversemarginpar
 
 % HEADINGS
@@ -122,14 +122,13 @@ $endif$
 \noindent
 $for(professional)$
 \note{$professional.years$}$professional.employer$\\
-\emph{$professional.job$}\\
 $professional.city$
-$if(professional.details)$
-\begin{itemize}
-$for(professional.details)$
-\item $professional.details$
+$if(professional.roles)$
+\begin{description}[style=standard,font=\normalfont\textit]
+$for(professional.roles)$
+\item[$professional.roles.position$] \note{\setlength{\marginparsep}{1pt} \footnotesize $professional.roles.years$} $professional.roles.detail$ 
 $endfor$
-\end{itemize}
+\end{description}
 $endif$
 $endfor$
 
@@ -161,7 +160,7 @@ $endfor$
 $endif$
 
 $if(techskills)$
-\subsection*{Technical skills}
+\section*{Technical skills}
 \noindent
 \begin{itemize*}[before=\unskip{},label=,itemjoin={{, }}]
 $for(techskills)$
