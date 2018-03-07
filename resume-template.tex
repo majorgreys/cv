@@ -58,7 +58,7 @@ $endif$
 %--------------------------------
 \usepackage{hyperref}
 \usepackage{xcolor}
-\definecolor{hrefcolor}{RGB}{244, 67, 54}
+\definecolor{hrefcolor}{RGB}{63, 81, 181}
 \hypersetup
 {
   pdfauthor={$name$},
@@ -122,11 +122,12 @@ $endif$
 \noindent
 $for(professional)$
 \note{$professional.years$}$professional.employer$\\
+\emph{$professional.job$}\\
 $professional.city$
 $if(professional.roles)$
-\begin{description}[style=standard,font=\normalfont\textit]
+\begin{description}[style=nextline,font=\normalfont\textit]
 $for(professional.roles)$
-\item[$professional.roles.position$] \note{\setlength{\marginparsep}{1pt} \footnotesize $professional.roles.years$} $professional.roles.detail$ 
+\item[$professional.roles.position$ --- {\footnotesize $professional.roles.years$}] $professional.roles.detail$ 
 $endfor$
 \end{description}
 $endif$
