@@ -121,8 +121,8 @@ $endif$
 \section*{Professional Experience}
 \noindent
 $for(professional)$
-\note{$professional.years$}$professional.employer$\\
-\emph{$professional.job$}\\
+\note{$professional.years$}\emph{$professional.job$}\\
+$professional.employer$\\
 $professional.city$
 $if(professional.roles)$
 \begin{description}[style=nextline,font=\normalfont\textit]
@@ -134,7 +134,7 @@ $endif$
 $endfor$
 
 $if(projects)$
-\section*{Projects}
+\section*{Research Projects}
 \noindent
 $for(projects)$
 \note{$projects.year$}$if(projects.url)$\href{$projects.url$}$endif${$projects.title$}\\
@@ -143,7 +143,7 @@ $projects.description$\\[.2cm]
 $endfor$
 $endif$
 
-\section*{Technical talks and workshops}
+\section*{Presentations and technical talks}
 \noindent
 $for(techtalks)$
 \note{$techtalks.date$}\href{https://$techtalks.url$}{$techtalks.title$}\\
