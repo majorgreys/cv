@@ -130,6 +130,14 @@ $for(professional.roles)$
 \item[$professional.roles.position$ --- {\footnotesize $professional.roles.years$}] $professional.roles.detail$ 
 $endfor$
 \end{description}
+$else$
+$if(professional.details)$
+\begin{itemize}
+$for(professional.details)$
+\item $professional.details$
+$endfor$
+\end{itemize}
+$endif$
 $endif$
 $endfor$
 

@@ -17,17 +17,17 @@ interests:
   - Data science
 
 techskills:
-- Python
+- Python (Flask, SQLAlchemy)
 - R
-- SQL
+- SQL (Oracle, MySQL)
 - WordPress
-- JavaScript
+- JavaScript (Backbone.js)
 - Git
 - Docker
 
 education:
 - year: 2011--
-  subject: Ph.D., Urban Education (Expected June 2018)
+  subject: Doctoral candidate, Urban Education (Expected 2019)
   institute: The Graduate Center, CUNY
   city: New York, NY
   dissertation: "\"Free Tuition and Exclusion at the City University of New York, 1957-1976\""
@@ -38,6 +38,13 @@ education:
   city: Baltimore, MD 
 
 professional:
+- years: May 2018--
+  employer: Liwwa, Inc.
+  job: Senior Software Engineer
+  city: New York, NY
+  details:
+  - Researched and prototyped image analysis pipeline
+  - Extended Flask/Backbone.js web application
 - years: 2005--2017
   employer: Amplify Education
   job: Data Analyst and Software Engineer
@@ -116,7 +123,7 @@ projects:
 
 techtalks:
 - date: Feb 2018
-  title: "Do the \'R\' Thing: Data Analysis with R"
+  title: "Do the 'R' Thing: Data Analysis with R"
   at: The Graduate Center, CUNY
   url: github.com/GCDigitalFellows/do-the-r-thing
 - date: Nov 2017
@@ -134,13 +141,13 @@ techtalks:
 
 talks:
 - year: 2017
-  title: "\"\'Harvard of the Poor\' as Racial Myth: Racism and the City University of New York, 1960-1969\""
+  title: "'Harvard of the Poor' as Racial Myth: Racism and the City University of New York, 1960-1969"
   at: Conversations in Black Freedom Studies, Schomburg Center for Research in Black Culture, New York Public Library
   date: November 2, 2017
   url: https://github.com/majorgreys/schomburg-talk-nov2017
 - year: 2015 
-  title: "\"Open Admissions and the Origins of the City College Childcare Center\""
-  at: "\"Panel Stories of Struggle: Histories of Childcare Activism at CUNY\", The Center for the Humanities, The Graduate Center, CUNY"
+  title: "Open Admissions and the Origins of the City College Childcare Center"
+  at: "Panel Stories of Struggle: Histories of Childcare Activism at CUNY, The Center for the Humanities, The Graduate Center, CUNY"
   date: March 4, 2015
 
 conferences:
