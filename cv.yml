@@ -43,8 +43,8 @@ professional:
   job: Senior Software Engineer
   city: New York, NY
   details:
-  - Researched and prototyped image analysis pipeline
-  - Extended Flask/Backbone.js web application
+  - Researched and prototyped image analysis and document digitization pipeline
+  - Extended Flask and Backbone.js web application
 - years: 2005--2017
   employer: Amplify Education
   job: Data Analyst and Software Engineer
