@@ -17,13 +17,10 @@ interests:
   - Data science
 
 techskills:
-- Python (Flask, SQLAlchemy)
+- Python
 - R
-- SQL (Oracle, MySQL)
-- WordPress
-- JavaScript (Backbone.js)
-- Git
-- Docker
+- SQL
+- JavaScript
 
 education:
 - year: 2011--
@@ -108,22 +105,22 @@ projects:
   title: Extreme Weather and Human Mobility
   organization: NYC Media Lab and The Weather Company
   description: Co-researched the effects of extreme weather on human populations using company's mobile product data with a focus on differences among socioeconomic groups
-- year: 2017
-  title: Visualizing NEH
-  organization: Graduate Center Digital Initiatives
-  description: Analysis of open data from National Endowment of Humanities (NEH) and the National Endowment of the Arts (NEA) following proposed budget cuts
-  url: https://majorgreys.github.io/visualizing-neh/
-- year: 2017
-  title: Digital Research Tools for Historians
-  organization: Provost Digital Innovation Grant, The Graduate Center, CUNY
-  description: Surveyed digital research tools for historians and proposed implementation of new software based on modern web technologies and cloud infrastructure
-- year: 2014--2016
-  title: Conversations in Black Freedom Studies
-  organization: Schomburg Center for Research in Black Culture and The Graduate Center, CUNY
-  description: Developed a website and produced social media as an online extension of a monthly series of discussions at the Schomburg Center
-  url: http://blackfreedomstudies.org/
+# - year: 2017
+#   title: Visualizing NEH
+#   organization: Graduate Center Digital Initiatives
+#   description: Analysis of open data from National Endowment of Humanities (NEH) and the National Endowment of the Arts (NEA) following proposed budget cuts
+#   url: https://majorgreys.github.io/visualizing-neh/
+# - year: 2017
+#   title: Digital Research Tools for Historians
+#   organization: Provost Digital Innovation Grant, The Graduate Center, CUNY
+#   description: Surveyed digital research tools for historians and proposed implementation of new software based on modern web technologies and cloud infrastructure
+# - year: 2014--2016
+#   title: Conversations in Black Freedom Studies
+#   organization: Schomburg Center for Research in Black Culture and The Graduate Center, CUNY
+#   description: Developed a website and produced social media as an online extension of a monthly series of discussions at the Schomburg Center
+#   url: http://blackfreedomstudies.org/
 
-techtalks:
+tutorials:
 - date: Feb 2018
   title: "Do the 'R' Thing: Data Analysis with R"
   at: The Graduate Center, CUNY
