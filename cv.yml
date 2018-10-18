@@ -35,7 +35,13 @@ education:
   city: Baltimore, MD 
 
 professional:
-- years: May 2018--
+- years: Oct 2018--Present
+  employer: Datadog
+  job: Open-Source Software Engineer
+  city: New York, NY
+  details:
+  - Extend performance measurement of Python libraries and frameworks
+- years: May 2018--Oct 2018
   employer: Liwwa, Inc.
   job: Senior Software Engineer
   city: New York, NY
